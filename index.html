@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiz Do Bem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="cabeçario">Raiz Do Bem</a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-item">Início</a></li>
+                <li><a href="#about" class="nav-item">Sobre</a></li>
+                <li><a href="#posts" class="nav-item">Posts</a></li>
+                <li><a href="#equipe" class="nav-item">Equipe</a></li>
+
+            </ul>
+        </nav>
+    </header>
+        <main>
+
+    <section id="home" class="inicial">
+        
+    </section>
+
+        <section id="" class="hero-section">
+            <h1>Bem-vindo a Raiz Do Bem</h1>
+            <p>A arte vive e o conhecimento é diverso</p>
+            <p>Acreditamos que, por meio do esporte, arte, música e outras expressões culturais, atingimos um público maior, e através dessa notoriedade queremos influenciar os jovens a desenvolverem seu potencial e a se conectarem com suas origens para construir um futuro mais diverso e rico culturalmente.</p>
+        </section>
+
+        <section id="about" class="content-block">
+            <h2>Sobre nós</h2><p>Quem somos?</p>
+            <div class="post-grid">
+                <article class="blog-post">
+                    <h3>Missão</h3>
+                    <img src="images/missao.jpg" alt="Imagem do Post 1" class="responsive-image">
+                    <p>Democratizar e valorizar nossa cultura, através da divulgação de estudos e fatos históricos em redes sociais. Nossa missão é espalhar a cultura já “enraizada” no Brasil pra que novas surgem futuramente.</p>
+                   
+                </article>
+                <article class="blog-post">
+                    <h3>Valores</h3>
+                    <img src="images/valores.jpg" alt="Imagem do Post 2" class="responsive-image">
+                    <p>Promover o acesso à cultura e ao conhecimento nas periferias como ferramentas de transformação social, valorizando as raízes, despertando talentos e fortalecendo a identidade dos jovens, especialmente aqueles em situação de vulnerabilidade, para gerar oportunidades reais de crescimento pessoal, educacional e cultural.
+</p>
+                </article>
+                <article class="blog-post">
+                    <h3>Visão</h3>
+                    <img src="images/visao.jpg" alt="Imagem do Post 3" class="responsive-image">
+                    <p>Acreditamos no poder da cultura e como ela pode trazer para a periferia a transformação, inspiração e empoderamento. Nossa visão é um futuro onde todo jovem das comunidades, de qualquer realidade, possa reconhecer seu valor, expressar sua voz e encontrar na cultura um caminho para crescer, sonhar e transformar o mundo ao seu redor.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="posts" class="content-block">
+            <h2>Últimos Posts</h2>
+            <div class="post-grid">
+                <article class="blog-post">
+                    <h3>Japam House
+                    </h3>
+                    <img src="images/imagenpost1.jpeg" alt="Imagem do Post 1" class="responsive-image">
+                    <p>Um dia na Japan House! Saindo um pouco da rotina para desfrutar das maravilhas de São Paulo</p>
+                    <a href="post1.html" class="read-more">Ler Mais</a>
+                </article>
+               
+            </div>
+
+             <div class="post-grid">
+                <article class="blog-post">
+                    <h3>Agosto Lilás 💜
+                    </h3>
+                    <img src="images/imagenpost3.jpeg" alt="Imagem do Post 1" class="responsive-image">
+                    <p>Em cada tom de lilás, um grito de liberdade. Que agosto seja o mês de romper silêncios e florescer coragem.</p>
+                    <a href="post3.html" class="read-more">Ler Mais</a>
+                </article>
+               
+            </div>
+
+             <div class="post-grid">
+                <article class="blog-post">
+                    <h3>Companha contra o cyberbullying! 
+                    </h3>
+                    <img src="images/imagenpost2.jpeg" alt="Imagem do Post 1" class="responsive-image">
+                    <p>Denuncie essa agressão, seja ela comentida pessoalmente ou de forma digital.</p>
+                    <a href="post2.html" class="read-more">Ler Mais</a>
+                </article>
+               
+            </div>
+                    </section>
+
+
+ <section id="equipe" class="hero-section">
+            <h1>Bem-vindo a Raiz Do Bem</h1>
+            <p>Nossa equipe</p>
+        
+
+
+        <section class="departamentos"> 
+        <div id="" class="blocos-dep">
+            <h1>RH</h1>
+        </div>
+        <div id="" class="blocos-dep">
+            <h1>Diretoria</h1>
+        </div>
+        <div id="" class="blocos-dep">
+            <h1>Design</h1>
+        </div>
+        <div id="" class="blocos-dep">
+            <h1>Eventos</h1>
+        </div>
+        <div id="" class="blocos-dep">
+            <h1>Marketin</h1>
+        </div>
+         <div id="" class="blocos-dep">
+            <h1>TI</h1>
+        </div>
+        </section>
+            </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025Raiz Do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+// Animação de rolagem suave baseada em IDs
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os itens de navegação
+    document.querySelectorAll('.nav-item').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            // Obtém o ID do elemento alvo
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            // Rola suavemente até o elemento
+            if (targetElement) {
+                targetElement.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Adiciona efeito de fade-in aos elementos quando aparecem na tela
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Aplica o efeito fade-in aos blocos de conteúdo
+    document.querySelectorAll('.content-block, .hero-section').forEach(block => {
+        block.style.opacity = '0';
+        block.style.transform = 'translateY(20px)';
+        block.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(block);
+    });
+
+    // Adiciona animação aos posts individuais
+    document.querySelectorAll('.blog-post').forEach((post, index) => {
+        post.style.opacity = '0';
+        post.style.transform = 'translateY(20px)';
+        post.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(post);
+    });
+
+    // Destaca o item de navegação ativo baseado na seção visível
+    const sections = document.querySelectorAll('section[id]');
+    
+    window.addEventListener('scroll', function() {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (pageYOffset >= (sectionTop - 100)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href') === `#${current}`) {
+                item.classList.add('active');
+            }
+        });
+    });
+
+    // Previne o envio do formulário e exibe mensagem
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pela sua mensagem! Entraremos em contato em breve.');
+            this.reset();
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
